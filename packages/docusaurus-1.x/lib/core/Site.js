@@ -5,11 +5,15 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+const CWD = process.cwd();
+
 const React = require('react');
 const fs = require('fs');
 const classNames = require('classnames');
 
-const HeaderNav = require('./nav/HeaderNav.js');
+const HeaderNav = (fs.existsSync(CWD + '/core/nav/HeaderNav.js'))
+  ? require(CWD + '/core/nav/HeaderNav.js')
+  : require('./nav/HeaderNav.js');
 const Head = require('./Head.js');
 
 const Footer = require(`${process.cwd()}/core/Footer.js`);
@@ -18,7 +22,6 @@ const env = require('../server/env.js');
 const liveReloadServer = require('../server/liveReloadServer.js');
 const {idx, getPath} = require('./utils.js');
 
-const CWD = process.cwd();
 
 // Component used to provide same head, header, footer, other scripts to all pages
 class Site extends React.Component {
