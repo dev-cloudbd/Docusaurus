@@ -79,7 +79,7 @@ class Site extends React.Component {
             [className]: className,
             separateOnPageNav: this.props.config.onPageNav == 'separate',
           })}>
-          <div className="app ui container">
+          <div className="app">
             <HeaderNav
               config={this.props.config}
               baseUrl={this.props.config.baseUrl}
