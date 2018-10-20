@@ -28,6 +28,7 @@ const docsPart = `${siteConfig.docsUrl ? `${siteConfig.docsUrl}/` : ''}`;
 const SupportedHeaderFields = new Set([
   'id',
   'title',
+  'noIndex',
   'author',
   'authorURL',
   'authorFBID',

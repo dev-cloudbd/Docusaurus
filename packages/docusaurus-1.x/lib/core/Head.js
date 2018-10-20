@@ -62,7 +62,7 @@ class Head extends React.Component {
             content={siteUrl + this.props.config.twitterImage}
           />
         )}
-        {this.props.config.noIndex && <meta name="robots" content="noindex" />}
+        {this.props.noIndex && <meta name="robots" content="noindex" />}
         {this.props.redirect && (
           <meta httpEquiv="refresh" content={`0; URL=${this.props.redirect}`} />
         )}

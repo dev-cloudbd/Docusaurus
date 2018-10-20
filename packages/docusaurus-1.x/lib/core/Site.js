@@ -73,6 +73,7 @@ class Site extends React.Component {
           url={url}
           language={this.props.language}
           version={this.props.version}
+          noIndex={this.props.config.noIndex || this.props.metadata.noIndex}
         />
         <body
           className={classNames({
