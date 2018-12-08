@@ -89,7 +89,7 @@ class DocsLayout extends React.Component {
           separateOnPageNav: hasOnPageNav,
         })}
         title={title}
-        description={renderMarkdown(content.trim().split('\n')[0])}
+        description={metadata.description || renderMarkdown(content.trim().split('\n')[0])}
         language={metadata.language}
         version={metadata.version}
         metadata={metadata}>
