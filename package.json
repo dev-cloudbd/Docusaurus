@@ -5,6 +5,10 @@
     "website",
     "website-1.x"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dev-cloudbd/Docusaurus.git"
+  },
   "scripts": {
     "prettier": "prettier --config .prettierrc --write \"**/*.js\"",
     "prettier:diff": "prettier --config .prettierrc --list-different \"**/*.js\"",
